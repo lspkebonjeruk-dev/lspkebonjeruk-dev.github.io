@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Digital - Nama Anda</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #0077b6 0%, #023e8a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-effect">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold gradient-text">PORTFOLIO.</span>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#tentang" class="hover:text-blue-600 transition-colors">Tentang</a>
+                <a href="#projek" class="hover:text-blue-600 transition-colors">Projek</a>
+                <a href="#sertifikat" class="hover:text-blue-600 transition-colors">Sertifikat</a>
+                <a href="#kontak" class="hover:text-blue-600 transition-colors">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-blue-700 bg-blue-50 rounded-full border border-blue-100">
+                Siswa SMK Jurusan Informatika
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight text-slate-900">
+                Nama Lengkap Anda
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed mb-10">
+                Seorang antusias teknologi yang fokus pada pengembangan perangkat lunak dan solusi perangkat keras kreatif.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#projek" class="px-8 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">
+                    Lihat Projek
+                </a>
+                <a href="#kontak" class="px-8 py-3 bg-white text-slate-900 border border-slate-200 rounded-xl font-semibold hover:bg-slate-50 transition-all">
+                    Hubungi Saya
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tentang Saya Section -->
+    <section id="tentang" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="flex justify-center">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-blue-100 rounded-full blur-xl opacity-50"></div>
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop" 
+                         alt="Foto Profil" 
+                         class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-3xl shadow-2xl border-4 border-white">
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-slate-900">Tentang Saya</h2>
+                <p class="text-slate-600 mb-8 leading-relaxed">
+                    Halo! Saya adalah siswa SMK jurusan Informatika yang memiliki gairah tinggi dalam mengeksplorasi teknologi baru. Saya senang belajar tentang logika pemrograman dan bagaimana teknologi dapat mempermudah pekerjaan manusia.
+                </p>
+                <h3 class="font-bold text-slate-900 mb-4">Keahlian & Tools:</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="flex items-center space-x-3 p-3 bg-slate-50 rounded-lg">
+                        <i data-lucide="code-2" class="w-5 h-5 text-blue-600"></i>
+                        <span class="text-sm font-medium">HTML & CSS Dasar</span>
+                    </div>
+                    <div class="flex items-center space-x-3 p-3 bg-slate-50 rounded-lg">
+                        <i data-lucide="cpu" class="w-5 h-5 text-blue-600"></i>
+                        <span class="text-sm font-medium">Arduino Dasar</span>
+                    </div>
+                    <div class="flex items-center space-x-3 p-3 bg-slate-50 rounded-lg">
+                        <i data-lucide="layout" class="w-5 h-5 text-blue-600"></i>
+                        <span class="text-sm font-medium">Desain Canva</span>
+                    </div>
+                    <div class="flex items-center space-x-3 p-3 bg-slate-50 rounded-lg">
+                        <i data-lucide="file-text" class="w-5 h-5 text-blue-600"></i>
+                        <span class="text-sm font-medium">MS Office</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projek Section -->
+    <section id="projek" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Projek Terpilih</h2>
+                <div class="w-20 h-1.5 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 card-hover">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="globe" class="text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Website Biodata</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Membangun struktur website pribadi yang responsif menggunakan HTML semantik dan CSS murni.
+                    </p>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Web Development</span>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 card-hover">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="zap" class="text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Arduino LED System</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Pemrograman mikro kontroler Arduino Uno untuk mengontrol pola lampu LED berjalan secara otomatis.
+                    </p>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">IoT & Robotics</span>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 card-hover">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="palette" class="text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Desain Poster Digital</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Eksperimen desain visual menggunakan Canva untuk kebutuhan publikasi media sosial sekolah.
+                    </p>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Graphic Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sertifikat Section -->
+    <section id="sertifikat" class="py-20 px-6 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Sertifikasi & Penghargaan</h2>
+                    <p class="text-slate-400">Bukti kompetensi yang telah saya pelajari.</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="flex items-center space-x-6 p-6 bg-slate-800 rounded-2xl border border-slate-700">
+                    <div class="shrink-0 w-14 h-14 bg-blue-600/20 rounded-xl flex items-center justify-center">
+                        <i data-lucide="award" class="text-blue-500 w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg">Sertifikat Webinar IT</h4>
+                        <p class="text-slate-400 text-sm">Peserta aktif pengembangan karir di era digital.</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6 p-6 bg-slate-800 rounded-2xl border border-slate-700">
+                    <div class="shrink-0 w-14 h-14 bg-blue-600/20 rounded-xl flex items-center justify-center">
+                        <i data-lucide="certificate" class="text-blue-500 w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg">Sertifikat Pelatihan Digital</h4>
+                        <p class="text-slate-400 text-sm">Lulus pelatihan dasar literasi digital nasional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-slate-900">Mari Berkolaborasi</h2>
+            <p class="text-slate-600 mb-12">Saya selalu terbuka untuk diskusi mengenai projek menarik atau peluang magang.</p>
+            
+            <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                <a href="mailto:emailanda@gmail.com" class="flex flex-col items-center p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-300 transition-all">
+                    <i data-lucide="mail" class="w-8 h-8 text-blue-600 mb-4"></i>
+                    <span class="text-sm text-slate-500 mb-1">Kirim Email</span>
+                    <span class="font-bold text-slate-900">emailanda@gmail.com</span>
+                </a>
+                <a href="https://instagram.com/username" target="_blank" class="flex flex-col items-center p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-300 transition-all">
+                    <i data-lucide="instagram" class="w-8 h-8 text-pink-600 mb-4"></i>
+                    <span class="text-sm text-slate-500 mb-1">Instagram</span>
+                    <span class="font-bold text-slate-900">@username</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-100 text-center">
+        <p class="text-slate-500 text-sm">&copy; 2026 Nama Anda. Dibuat dengan semangat untuk belajar.</p>
+    </footer>
+
+    <script>
+        // Inisialisasi Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
